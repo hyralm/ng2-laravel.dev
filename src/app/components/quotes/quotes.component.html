@@ -1,0 +1,4 @@
+<app-quote *ngFor="let quote of quotes" [quote]="quote" (quoteDeleted)="onDeleted($event)"></app-quote>
+<div *ngIf="quotesIsEmpty">
+    Any quote can't be found. You can create your first quote <a routerLink="/new-quote">here</a>
+</div>
